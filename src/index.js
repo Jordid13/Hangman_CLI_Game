@@ -46,15 +46,13 @@ const main = () => {
     arrayState = getArrayState();
     partsRemaining = getBodyPart();
   }
-  if (partsRemaining === 0) {
+  if (partsRemaining === 0 && arrayState.includes("_")) {
     // CHECKING IF ITS 0 AGAIN FOR SOME REASON??? (IM TIRED AF)
     console.clear();
     userLost();
-    console.log("\nBruh\n");
   } else {
     console.clear();
     userWon();
-    console.log("\nYOU WIN!!\n");
   }
 };
 
