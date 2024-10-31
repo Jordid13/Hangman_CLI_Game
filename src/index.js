@@ -10,26 +10,26 @@ const {
 } = require("./smallerfunctions");
 
 const wordList = [
-  "javascript",
-  "interface",
-  "function",
-  "variable",
-  "object",
-  "programming",
-  "callback",
-  "algorithm",
-  "asynchronous",
-  "framework",
-  "iteration",
-  "prototype",
-  "closure",
-  "debugging",
-  "syntax",
-  "compiler",
-  "inheritance",
-  "database",
-  "runtime",
-  "recursion",
+  "adventure",
+  "butterfly",
+  "champion",
+  "diamond",
+  "elephant",
+  "festival",
+  "galaxy",
+  "harmony",
+  "island",
+  "jungle",
+  "kingdom",
+  "landscape",
+  "mystery",
+  "nightmare",
+  "ocean",
+  "pyramid",
+  "rainbow",
+  "treasure",
+  "universe",
+  "voyage",
 ];
 
 const main = () => {
@@ -47,9 +47,9 @@ const main = () => {
     partsRemaining = getBodyPart();
   }
   if (partsRemaining === 0 && arrayState.includes("_")) {
-    // CHECKING IF ITS 0 AGAIN FOR SOME REASON??? (IM TIRED AF)
     console.clear();
     userLost();
+    console.log(`The word was ${word}`);
   } else {
     console.clear();
     userWon();
